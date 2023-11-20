@@ -73,6 +73,10 @@
     --box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body{
     margin: 0;
     padding: 0;

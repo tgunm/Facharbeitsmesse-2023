@@ -71,6 +71,7 @@
     /* rest */
     --min-device-width: 1326px;
     --box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    --box-shadow-nav-img: rgba(0, 0, 0, 0.3) 0px 0px 12px, rgba(0, 0, 0, 0.22) 0px 0px 6px;
 }
 
 body{
@@ -205,6 +206,7 @@ h1, h2, h3 {
     }
 
     #favicon-link-home img {
+        box-shadow: var(--box-shadow-nav-img);
         height: 76px;
         width: auto;
         border-radius: 9px;
@@ -305,7 +307,7 @@ h1, h2, h3 {
         justify-self: center;
     }
     nav a img {
-        
+        box-shadow: var(--box-shadow-nav-img);
         margin-top: 2px;
         width: auto;
         height: 48px;

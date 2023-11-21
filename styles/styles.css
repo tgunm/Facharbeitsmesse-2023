@@ -629,6 +629,7 @@ h1, h2, h3 {
     background: -webkit-linear-gradient(#faaf25, #ce22ce);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-decoration: none;
 }
 
 .footer {
@@ -649,10 +650,6 @@ h1, h2, h3 {
 .footer p {
     text-align: center;
     margin: 0;
-}
-
-.footer #instagram {
-
 }
 
 #written-by {

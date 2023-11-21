@@ -72,6 +72,7 @@
     --min-device-width: 1326px;
     --box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     --box-shadow-nav-img: rgba(0, 0, 0, 0.3) 0px 0px 12px, rgba(0, 0, 0, 0.22) 0px 0px 6px;
+    --grid-img-margin: 10px;
 }
 
 html {
@@ -493,12 +494,12 @@ h1, h2, h3 {
     max-height: 800px;
 }
 
-#content-description-projects {
+.content-description-projects {
     display: flex;
     justify-content: center;
 }
 
-#content-description-projects h1{
+.content-description-projects h1{
     margin-top: .3875rem;
     margin-bottom: .7rem;
     text-align: center;
@@ -534,7 +535,7 @@ h1, h2, h3 {
     .grid-projekte div img {
         z-index: 11;
         display: block;
-        max-width: 50%;
+        max-width: calc(50% - var(--grid-img-margin));
         max-height: calc(50vw*0.6);
         box-shadow: var(--box-shadow);
     }
@@ -548,7 +549,7 @@ h1, h2, h3 {
     }
 
     .tr img {
-        margin: 10px;
+        margin: var(--grid-img-margin);
         margin-right: 0;
     }
 
@@ -569,7 +570,7 @@ h1, h2, h3 {
     }
 
     .tl img {
-        margin: 10px;
+        margin: var(--grid-img-margin);
         margin-left: 0;
     }
 
@@ -623,13 +624,24 @@ h1, h2, h3 {
     padding: 10px;
 }
 
+#oeffiteam .project-description a{
+    padding: 0px;
+    background: -webkit-linear-gradient(#faaf25, #ce22ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .footer {
     grid-area: footer;
-    margin-top: 20px;
-    margin-bottom: 5px;
     justify-self: center;
     align-self: flex-end;
-    background-color: color-mix(in hsl shorter hue, var(--secondary-color) 45%, transparent);
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: var(--border-radius-px);
     padding: 2px;
 }
@@ -637,6 +649,10 @@ h1, h2, h3 {
 .footer p {
     text-align: center;
     margin: 0;
+}
+
+.footer #instagram {
+
 }
 
 #written-by {

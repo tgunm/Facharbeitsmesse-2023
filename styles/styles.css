@@ -74,6 +74,10 @@
     --box-shadow-nav-img: rgba(0, 0, 0, 0.3) 0px 0px 12px, rgba(0, 0, 0, 0.22) 0px 0px 6px;
 }
 
+html {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body{
     margin: 0;
     padding: 0;

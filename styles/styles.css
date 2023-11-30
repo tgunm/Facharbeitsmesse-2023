@@ -70,7 +70,7 @@
 
     /* rest */
     --min-device-width: 1326px;
-    --box-shadow: rgba(0, 0, 0, 0.3) 0px 12px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    --box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 20px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
     --box-shadow-nav-img: rgba(0, 0, 0, 0.3) 0px 0px 12px, rgba(0, 0, 0, 0.22) 0px 0px 6px;
     --grid-img-margin: 10px;
 }
@@ -630,6 +630,17 @@ h1, h2, h3 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
+}
+
+#messeplan-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#messeplan-info img {
+    max-height: max-content;
 }
 
 .footer {

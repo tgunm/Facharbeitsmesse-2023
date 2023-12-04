@@ -97,7 +97,7 @@ body:has(#burger_toggle:checked) {
 
 p {
     font-size: var(--p-font-size);
-    line-height: calc(1.5*var(--p-font-size));
+    line-height: calc(1.4*var(--p-font-size));
     margin-block-start: 1vh;
     margin-block-end: 1vh;
     text-align: left;

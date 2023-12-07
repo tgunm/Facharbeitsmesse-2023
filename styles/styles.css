@@ -658,6 +658,10 @@ h1, h2, h3 {
     padding: 2px;
 }
 
+#impressum {
+    text-align: center;
+}
+
 .footer p {
     text-align: center;
     margin: 0;
